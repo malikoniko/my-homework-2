@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Малики — Обо мне</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #333; color: white; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        main { max-width: 800px; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        table, th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        form { display: flex; flex-direction: column; gap: 10px; }
+        .form-group { display: flex; flex-direction: column; }
+        footer { text-align: center; padding: 20px; font-size: 0.9em; color: #666; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Личная страница Малики</h1>
+        <nav>
+            <ul>
+                <li><a href="homework-2.html">Главная</a></li>
+                <li><a href="projects.html">Мои проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Немного обо мне</h2>
+            <p>Меня зовут <strong>Малика</strong>, и я делаю свои первые шаги в веб-разработке. Это <em>очень увлекательно</em> — видеть, как обычный текст превращается в работающий сайт.</p>
+            <p>Сейчас я активно изучаю <strong>HTML и CSS</strong>. Моя главная цель — научиться создавать сайты, которые будут полезны людям.</p>
+            <p>Я стараюсь уделять учебе время каждый день, ведь практика — это ключ к успеху.</p>
+        </article>
+
+        <hr>
+
+        <section>
+            <h2>Мои навыки</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Навык</th>
+                        <th>Уровень</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Начинающий</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Базовый</td>
+                    </tr>
+                    <tr>
+                        <td>Работа с текстом</td>
+                        <td>Средний</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Напишите мне</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Согласен на обработку данных</label>
+                </div>
+
+                <div>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить форму</button>
+                </div>
+            </form>
+        </section>
+        
+        <p style="margin-top: 20px;"><a href="projects.html">Смотреть мои проекты &rarr;</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Малика. Сделано с любовью для домашки.</p>
+    </footer>
+
+</body>
+</html>
