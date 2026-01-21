@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Сайт Малики</title>
+  <style>
+   
+    body { 
+      font-family: sans-serif; 
+      line-height: 1.5; 
+      padding: 20px; 
+      max-width: 800px; 
+    }
+    img { 
+      width: 200px; 
+      display: block; 
+      margin-bottom: 20px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Обо мне</h1>
+
+  <img src="me.jpg" alt="Моя фотография">
+
+  <p>Меня зовут Малика. Сейчас я учусь в школе. В свободное время я люблю играть на гитаре. Также люблю читать книги, особенно научно-популярную литературу о космосе</p>
+
+  <p>Я очень люблю животных, особенно котиков, но к сожалению у меня на них аллергия.</p>
+
+  <p>Помимо учебы, я люблю проводить время с пользой. Я считаю, что важно уметь не только работать, но и правильно отдыхать, чтобы были силы на новые задачи.</p>
+
+  <p>Я люблю изучать космос.</p>
+
+  <h2>Мои интересы</h2>
+  <ul>
+    <li>Слушать музыку</li>
+    <li>Изучать иностранные языки</li>
+    <li>Изучать космос</li>
+  </ul>
+
+  <h2>Мои цели</h2>
+  <ol>
+    <li>Успешно сдать домашнюю работу</li>
+    <li>Стать астрофизиком</li>
+    <li>Начать изучать язык программирования JavaScript</li>
+  </ol>
+
+  <p>Мои контакты:</p>
+  <a href="https://github.com/malikoniko" target="_blank">Мой GitHub</a> <br>
+  <a href="https://instagram.com/seilovaa_m" target="_blank">Мой Instagram</a>
+
+  <hr>
+
+  <button id="btn">Нажми на меня!</button>
+  <p id="result"></p>
+
+  <script>
+    const btn = document.getElementById('btn');
+    const result = document.getElementById('result');
+
+    btn.addEventListener('click', () => {
+      result.textContent = 'Привет! Желаю тебе хорошего дня и настроения!';
+    });
+  </script>
+
+</body>
+</html>
